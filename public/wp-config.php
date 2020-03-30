@@ -49,7 +49,7 @@ if ( ! defined( 'WP_DEBUG' ) ) {
 // Disable automatic updates
 // =========================
 if ( ! defined( 'AUTOMATIC_UPDATER_DISABLED' ) ) {
-    define( 'AUTOMATIC_UPDATER_DISABLED', false );
+    define( 'AUTOMATIC_UPDATER_DISABLED', true );
 }
 
 // =======================

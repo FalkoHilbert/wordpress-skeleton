@@ -16,5 +16,13 @@
             "public/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
             "public/wp-content/themes/{$name}/": ["type:wordpress-theme"]
         }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "dev-ops/install.sh"
+        ],
+        "post-update-cmd": [
+            "dev-ops/update.sh"
+        ]
     }
 }
