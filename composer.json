@@ -19,7 +19,7 @@
     },
     "scripts": {
         "post-install-cmd": [
-            "dev-ops/install.sh"
+            "echo -e 'please run: \033[1m./dev-ops/install.sh\033[0m'!"
         ],
         "post-update-cmd": [
             "dev-ops/update.sh"
