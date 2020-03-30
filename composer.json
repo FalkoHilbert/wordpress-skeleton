@@ -19,7 +19,7 @@
     },
     "scripts": {
         "post-install-cmd": [
-            "echo -e '\e[33mPlease copy local-config.sample.php to local-config.php modify it \nAfter that run: \e[1m./dev-ops/install.sh\e[0m'!"
+            "echo -e \"\\e[33mPlease copy local-config.sample.php to local-config.php modify it \\nAfter that run: \\e[1m./dev-ops/install.sh\\e[0m'!"
         ],
         "post-update-cmd": [
             "dev-ops/update.sh"
