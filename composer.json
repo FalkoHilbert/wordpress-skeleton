@@ -7,7 +7,7 @@
     ],
     "require": {
         "composer/installers": "1.*",
-        "johnpbloch/wordpress": ">=4.9"
+        "johnpbloch/wordpress": "~5.3"
     },
     "extra": {
         "wordpress-install-dir": "public/wp",
@@ -16,5 +16,13 @@
             "public/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
             "public/wp-content/themes/{$name}/": ["type:wordpress-theme"]
         }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "dev-ops/install.sh"
+        ],
+        "post-update-cmd": [
+            "dev-ops/update.sh"
+        ]
     }
 }
